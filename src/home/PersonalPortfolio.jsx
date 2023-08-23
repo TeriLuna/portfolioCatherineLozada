@@ -118,7 +118,7 @@ class PersonalPortfolio extends Component {
                   <div className="thumbnail">
                     <img
                       className="w-100"
-                      src="/assets/images/about/about-5.jpg"
+                      src="./assets/images/about/about-5.jpg"
                       alt="About Images"
                     />
                   </div>
@@ -180,7 +180,7 @@ class PersonalPortfolio extends Component {
                 <div className="thumbnail position-relative">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-10.png"
+                    src="./assets/images/about/about-10.png"
                     alt="About Images"
                   />
                   <ModalVideo
@@ -215,7 +215,7 @@ class PersonalPortfolio extends Component {
                 <div className="thumbnail">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-4.png"
+                    src="./assets/images/about/about-4.png"
                     alt="About Images"
                   />
                 </div>
