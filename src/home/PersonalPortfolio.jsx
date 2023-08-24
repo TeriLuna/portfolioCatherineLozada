@@ -59,6 +59,7 @@ class PersonalPortfolio extends Component {
     let title = "My About",
       description =
         "As a highly motivated FrontEnd Developer with over 2 years of experience, I have a passion for learning and am always seeking out new challenges to improve my skills. I am dedicated to producing high-quality work and delivering exceptional results. My expertise in React JS, HTML5, CSS3, JavaScript, and other front-end technologies allows me to create responsive and visually appealing websites that meet client needs.";
+
     return (
       <Fragment>
         <Helmet pageTitle="Personal Portfolio" />
@@ -218,7 +219,7 @@ class PersonalPortfolio extends Component {
         {/* End About Area */}
 
         {/* Start Brand Area  */}
-        <div className="rn-brand-area pb--120 bg_color--1">
+        <div className="rn-brand-area pb--120 bg_color--1" id="clients">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -238,7 +239,7 @@ class PersonalPortfolio extends Component {
         {/* End Brand Area  */}
 
         {/* Start About Area  */}
-        <div className="rn-about-area pb--120 bg_color--1">
+        <div className="rn-about-area pb--120 bg_color--1" id="skills">
           <div className="container">
             <div className="row row--35 align-items-center">
               <div className="col-lg-6">
@@ -291,7 +292,7 @@ class PersonalPortfolio extends Component {
         {/* End About Area  */}
 
         {/* Start Portfolio Area */}
-        <div className="portfolio-area pb--60 bg_color--1">
+        <div className="portfolio-area pb--60 bg_color--1" id="projects">
           <div className="portfolio-sacousel-inner mb--55 mb_sm--0">
             <div className="container">
               <div className="row">
@@ -321,7 +322,7 @@ class PersonalPortfolio extends Component {
         {/* End Portfolio Area */}
 
         {/* Start Portfolio Area */}
-        <div className="portfolio-area pb--120 bg_color--1">
+        <div className="portfolio-area pb--120 bg_color--1" id="contact">
           <ContactOne />
         </div>
         {/* End Portfolio Area */}
