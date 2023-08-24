@@ -8,57 +8,96 @@ const Result = () => {
     </p>
   );
 };
+
 function FormStyle({ props }) {
   const [result, showresult] = useState(false);
+  const [email, setEmail] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [phone, setPhone] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        "service_p4x3hv8",
-        "template_jgfr42f",
-        e.target,
-        "user_jrfTH2e0Ely35ZCVFdT9S"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
+      .send(
+        "service_hbfy1dm",
+        "template_4y9cimd",
+        {
+          fullname,
+          email,
+          phone,
+          company,
+          message,
         },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+        "CJI5SdL0Cl7exGh5-"
+      )
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(
+          "There was and error after trying to send the message: ",
+          error
+        );
+      });
+
     e.target.reset();
     showresult(true);
   };
 
   setTimeout(() => {
     showresult(false);
-  }, 5000);
+  }, 10000);
 
   return (
     <div className="form-wrapper">
       <form action="" onSubmit={sendEmail}>
         <div className="rn-form-group">
-          <input type="text" name="fullname" placeholder="Your Name" required />
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Your Name"
+            onChange={(e) => setFullname(e.target.value)}
+            required
+          />
         </div>
 
         <div className="rn-form-group">
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
         </div>
 
         <div className="rn-form-group">
-          <input type="text" name="phone" placeholder="Phone Number" required />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone Number"
+            onChange={(e) => setPhone(e.target.value)}
+            required
+          />
         </div>
 
         <div className="rn-form-group">
-          <input type="text" name="company" placeholder="Company" required />
+          <input
+            type="text"
+            name="company"
+            placeholder="Company"
+            onChange={(e) => setCompany(e.target.value)}
+            required
+          />
         </div>
 
         <div className="rn-form-group">
           <textarea
             name="message"
             placeholder="Your Message"
+            onChange={(e) => setMessage(e.target.value)}
             required
           ></textarea>
         </div>

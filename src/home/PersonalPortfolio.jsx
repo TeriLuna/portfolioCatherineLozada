@@ -162,8 +162,8 @@ class PersonalPortfolio extends Component {
                       <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div className="about-us-list">
                           <h5 className="title">Certifications</h5>
-                          {Certifications.map((certification, i) => (
-                            <div className=" mb--30">
+                          {Certifications.map((certification, index) => (
+                            <div className=" mb--30" key={index}>
                               <p className="mb--10">{certification.title}</p>
                               <a
                                 className="link im-hover"
