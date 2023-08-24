@@ -14,29 +14,19 @@ const SocialShare = [
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isMenuOpen: false,
-      isSubMenuOpen: false,
-    };
     this.menuTrigger = this.menuTrigger.bind(this);
     this.closeMenuTrigger = this.closeMenuTrigger.bind(this);
-    this.subMenuTrigger = this.subMenuTrigger.bind(this);
+    window.addEventListener("load", function () {
+      console.log("All assets are loaded");
+    });
   }
 
   menuTrigger() {
-    this.setState((prevState) => ({
-      isMenuOpen: !prevState.isMenuOpen,
-    }));
+    document.querySelector(".header-wrapper").classList.toggle("menu-open");
   }
 
   closeMenuTrigger() {
-    this.setState({ isMenuOpen: false });
-  }
-
-  subMenuTrigger() {
-    this.setState((prevState) => ({
-      isSubMenuOpen: !prevState.isSubMenuOpen,
-    }));
+    document.querySelector(".header-wrapper").classList.remove("menu-open");
   }
 
   render() {
@@ -80,7 +70,7 @@ class Header extends Component {
     }
     return (
       <header
-        className={`header-area header-style-two header--transparent ${color}`}
+        className={`header-area header-style-two header--transparent  ${color}`}
         style={{ background: "#d1d4d7b5" }}
       >
         <div className="header-wrapper">
@@ -90,14 +80,23 @@ class Header extends Component {
             </div>
             <nav className="mainmenunav d-lg-block ml--50">
               <ul className="mainmenu">
-                <li className="has-droupdown">
+                <li>
                   <Link to="/">Home</Link>
                 </li>
-                <li className="has-droupdown">
-                  <Link to="#about">About</Link>
+                <li>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <a href="#clients">Clients</a>
+                </li>
+                <li>
+                  <a href="#skills">Skills</a>
+                </li>
+                <li>
+                  <a href="#projects">Projects</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -129,7 +128,7 @@ class Header extends Component {
             </div>
             {/* End Humberger Menu  */}
             <div className="close-menu d-block d-lg-none">
-              <span onClick={this.CLoseMenuTrigger} className="closeTrigger">
+              <span onClick={this.closeMenuTrigger} className="closeTrigger">
                 <FiX />
               </span>
             </div>
