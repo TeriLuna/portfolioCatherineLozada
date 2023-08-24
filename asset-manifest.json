@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolioCatherineLozada/static/css/main.11f59786.chunk.css",
+    "main.css": "/portfolioCatherineLozada/static/css/main.17495607.chunk.css",
     "main.js": "/portfolioCatherineLozada/static/js/main.57204bbc.chunk.js",
     "main.js.map": "/portfolioCatherineLozada/static/js/main.57204bbc.chunk.js.map",
     "runtime~main.js": "/portfolioCatherineLozada/static/js/runtime~main.8b689fbf.js",
     "runtime~main.js.map": "/portfolioCatherineLozada/static/js/runtime~main.8b689fbf.js.map",
-    "static/css/2.1f75adf2.chunk.css": "/portfolioCatherineLozada/static/css/2.1f75adf2.chunk.css",
+    "static/css/2.0571f848.chunk.css": "/portfolioCatherineLozada/static/css/2.0571f848.chunk.css",
     "static/js/2.a961575b.chunk.js": "/portfolioCatherineLozada/static/js/2.a961575b.chunk.js",
     "static/js/2.a961575b.chunk.js.map": "/portfolioCatherineLozada/static/js/2.a961575b.chunk.js.map",
     "index.html": "/portfolioCatherineLozada/index.html",
-    "precache-manifest.ac6f2594c91dfe0f544804ca59c83088.js": "/portfolioCatherineLozada/precache-manifest.ac6f2594c91dfe0f544804ca59c83088.js",
+    "precache-manifest.05e7c0e7600c7f019527da4f3cedea82.js": "/portfolioCatherineLozada/precache-manifest.05e7c0e7600c7f019527da4f3cedea82.js",
     "service-worker.js": "/portfolioCatherineLozada/service-worker.js",
-    "static/css/2.1f75adf2.chunk.css.map": "/portfolioCatherineLozada/static/css/2.1f75adf2.chunk.css.map",
-    "static/css/main.11f59786.chunk.css.map": "/portfolioCatherineLozada/static/css/main.11f59786.chunk.css.map",
-    "static/js/2.a961575b.chunk.js.LICENSE.txt": "/portfolioCatherineLozada/static/js/2.a961575b.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/portfolioCatherineLozada/static/media/slick.f97e3bbf.svg"
+    "static/css/2.0571f848.chunk.css.map": "/portfolioCatherineLozada/static/css/2.0571f848.chunk.css.map",
+    "static/css/main.17495607.chunk.css.map": "/portfolioCatherineLozada/static/css/main.17495607.chunk.css.map",
+    "static/js/2.a961575b.chunk.js.LICENSE.txt": "/portfolioCatherineLozada/static/js/2.a961575b.chunk.js.LICENSE.txt"
   }
 }
