@@ -5,4 +5,5 @@
 /build
 
 # VS Code
-.vscodesendgrid.env
+.vscode
+
