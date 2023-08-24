@@ -44,32 +44,44 @@ class Header extends Component {
     let logoUrl;
     if (logo === "light") {
       logoUrl = (
-        <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />
+        <img
+          src="./assets/images/logo/logo-symbol-light.png"
+          alt="FrontEnd Dev Catherine Lozada's logo"
+        />
       );
     } else if (logo === "dark") {
       logoUrl = (
-        <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />
+        <img
+          src="./assets/images/logo/logo-symbol-dark.png"
+          alt="FrontEnd Dev Catherine Lozada's logo"
+        />
       );
     } else if (logo === "symbol-dark") {
       logoUrl = (
         <img
-          src="/assets/images/logo/logo-symbol-dark.png"
-          alt="Digital Agency"
+          src="./assets/images/logo/logo-symbol-dark.png"
+          alt="FrontEnd Dev Catherine Lozada's logo"
         />
       );
     } else if (logo === "symbol-light") {
       logoUrl = (
         <img
-          src="/assets/images/logo/logo-symbol-light.png"
-          alt="Digital Agency"
+          src="./assets/images/logo/logo-symbol-light.png"
+          alt="FrontEnd Dev Catherine Lozada's logo"
         />
       );
     } else {
-      logoUrl = <img src="/assets/images/logo/logo.png" alt="Digital Agency" />;
+      logoUrl = (
+        <img
+          src="./assets/images/logo/logo-symbol-dark.png"
+          alt="FrontEnd Dev Catherine Lozada's logo"
+        />
+      );
     }
     return (
       <header
         className={`header-area header-style-two header--transparent ${color}`}
+        style={{ background: "#d1d4d7b5" }}
       >
         <div className="header-wrapper">
           <div className="header-left d-flex align-items-center">
@@ -95,7 +107,13 @@ class Header extends Component {
               <ul className="social-share social-style--2 color-black d-flex justify-content-start liststyle">
                 {SocialShare.map((val, i) => (
                   <li key={i}>
-                    <a href={`${val.link}`}>{val.Social}</a>
+                    <a
+                      href={`${val.link}`}
+                      target={"_blank"}
+                      rel={"noopener noreferrer"}
+                    >
+                      {val.Social}
+                    </a>
                   </li>
                 ))}
               </ul>

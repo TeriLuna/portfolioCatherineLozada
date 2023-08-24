@@ -52,7 +52,7 @@ function FormStyle({ props }) {
         </div>
 
         <div className="rn-form-group">
-          <input type="text" name="subject" placeholder="Subject" required />
+          <input type="text" name="company" placeholder="Company" required />
         </div>
 
         <div className="rn-form-group">
@@ -71,7 +71,7 @@ function FormStyle({ props }) {
             name="submit"
             id="mc-embedded-subscribe"
           >
-            Submit Now
+            Send
           </button>
         </div>
 
