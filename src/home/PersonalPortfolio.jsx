@@ -71,7 +71,7 @@ class PersonalPortfolio extends Component {
           {/* Start Single Slide */}
           {SlideList.map((value, index) => (
             <div
-              className="slide slider_fixed_height slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--16 white-overlay-mobile"
+              className="slide slider_fixed_height slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--teri white-overlay-mobile"
               key={index}
             >
               <div className="container">
