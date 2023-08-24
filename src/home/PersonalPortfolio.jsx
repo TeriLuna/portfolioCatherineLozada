@@ -16,7 +16,7 @@ const SlideList = [
     description:
       "I  have a passion for learning and am always seeking out new challenges to improve my skills.",
     buttonText: "Download my CV",
-    buttonLink: "/assets/pdf/Catherine-Lozada-CV.pdf",
+    buttonLink: "./assets/pdf/Catherine-Lozada-CV.pdf",
   },
 ];
 
@@ -276,7 +276,7 @@ class PersonalPortfolio extends Component {
                   <div className="about-button mt--30">
                     <a
                       className="btn-default"
-                      href="/assets/pdf/Catherine-Lozada-CV.pdf"
+                      href="./assets/pdf/Catherine-Lozada-CV.pdf"
                       download="CatherineLozadaCV"
                       target={"_blank"}
                       rel={"noopener noreferrer"}
