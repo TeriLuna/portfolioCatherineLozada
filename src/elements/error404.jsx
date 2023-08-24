@@ -11,7 +11,7 @@ class error404 extends Component {
         <Header
           headerPosition="header--transparent"
           color="color-white"
-          logo="logo-light"
+          logo="logo-symbol-light"
         />
         {/* Start Page Error  */}
         <div className="error-page-inner bg_color--4">

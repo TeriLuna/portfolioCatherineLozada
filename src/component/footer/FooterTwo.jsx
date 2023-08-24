@@ -1,16 +1,12 @@
 import React from "react";
-import {
-  FaTwitter,
-  FaInstagram,
-  FaFacebookF,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaTwitter />, link: "https://twitter.com/" },
+  {
+    Social: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/in/catherine-lozada/",
+  },
+  { Social: <FaGithub />, link: "https://github.com/TeriLuna/" },
 ];
 
 const FooterTwo = () => {
@@ -23,7 +19,7 @@ const FooterTwo = () => {
               <div className="logo text-center text-sm-left mb_sm--20">
                 <a href="/home-one">
                   <img
-                    src="./assets/images/logo/logo-light.png"
+                    src="./assets/images/logo/logo-symbol-light.png"
                     alt="Logo images"
                   />
                 </a>
@@ -35,7 +31,13 @@ const FooterTwo = () => {
               <ul className="social-share rn-lg-size d-flex justify-content-center liststyle">
                 {SocialShare.map((val, i) => (
                   <li key={i}>
-                    <a href={`${val.link}`}>{val.Social}</a>
+                    <a
+                      href={`${val.link}`}
+                      target={"_blank"}
+                      rel={"noopener noreferrer"}
+                    >
+                      {val.Social}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -44,7 +46,10 @@ const FooterTwo = () => {
           <div className="col-lg-4 col-md-12 col-sm-12 col-12">
             <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
               <div className="text">
-                <p>Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
+                <p>
+                  Copyright © 2023 - {new Date().getFullYear()} Catherine Lozada
+                  Bedoya. All Rights Reserved.
+                </p>
               </div>
             </div>
           </div>
