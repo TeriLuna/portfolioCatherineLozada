@@ -118,7 +118,7 @@ font-family: 'Poppins', sans-serif;
   "3" #fafafb,
   "4" #1a1b1f,
   "5" #fafafb,
-  "6" $black-color,
+  "6" #320f5f,
   "7" var(--color-midgray),
   "8" #0e1525,
   "9" #091020,
@@ -153,7 +153,7 @@ font-family: 'Poppins', sans-serif;
   }
 }
 .bg-image--teri {
-  background-image: url(./assets/images/bg/bg-image-16.jpg) !important;
+  background-image: url("https://raw.githubusercontent.com/TeriLuna/portfolioCatherineLozada/master/public/assets/images/bg/bg-image-16.jpg") !important;
 }
 
 @for $i from 1 through 80 {
