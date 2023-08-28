@@ -76,12 +76,12 @@ class Header extends Component {
         <div className="header-wrapper">
           <div className="header-left d-flex align-items-center">
             <div className="logo">
-              <a href="/">{logoUrl}</a>
+              <Link to="/portfolioCatherineLozada">{logoUrl}</Link>
             </div>
             <nav className="mainmenunav d-lg-block ml--50">
               <ul className="mainmenu">
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/portfolioCatherineLozada">Home</Link>
                 </li>
                 <li>
                   <a href="#about">About</a>
