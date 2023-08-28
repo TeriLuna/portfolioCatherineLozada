@@ -6,6 +6,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
+First at all, please make sure that you are using node v16, for that please run `nvm use v16.13.0`
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 

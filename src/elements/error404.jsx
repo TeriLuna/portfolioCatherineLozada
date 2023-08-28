@@ -3,6 +3,7 @@ import Header from "../component/header/HeaderTwo";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Footer from "../component/footer/FooterTwo";
+import { Link } from "react-router-dom";
 
 class error404 extends Component {
   render() {
@@ -20,12 +21,16 @@ class error404 extends Component {
               <div className="col-lg-12">
                 <div className="inner">
                   <h1 className="title theme-gradient">404!</h1>
+                  <h2 className="sub-title">Upps!</h2>
                   <h3 className="sub-title">Page not found</h3>
                   <span>The page you were looking for could not be found.</span>
                   <div className="error-button">
-                    <a className="btn-default" href="/">
+                    <Link
+                      className="btn-default"
+                      to="/portfolioCatherineLozada"
+                    >
                       Back To Homepage
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

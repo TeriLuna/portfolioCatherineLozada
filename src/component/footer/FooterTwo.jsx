@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SocialShare = [
   {
@@ -17,12 +18,12 @@ const FooterTwo = () => {
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
             <div className="inner">
               <div className="logo text-center text-sm-left mb_sm--20">
-                <a href="/">
+                <Link to="/portfolioCatherineLozada">
                   <img
                     src="./assets/images/logo/logo-symbol-light.png"
                     alt="Logo images"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
