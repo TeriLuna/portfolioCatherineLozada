@@ -27,7 +27,7 @@ class error404 extends Component {
                   <div className="error-button">
                     <Link
                       className="btn-default"
-                      to="/portfolioCatherineLozada"
+                      to="/portfolioCatherineLozada/"
                     >
                       Back To Homepage
                     </Link>
