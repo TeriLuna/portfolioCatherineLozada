@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolioCatherineLozada/static/css/main.975aa1d5.chunk.css",
+    "main.css": "/portfolioCatherineLozada/static/css/main.51a925be.chunk.css",
     "main.js": "/portfolioCatherineLozada/static/js/main.e63db78a.chunk.js",
     "main.js.map": "/portfolioCatherineLozada/static/js/main.e63db78a.chunk.js.map",
     "runtime~main.js": "/portfolioCatherineLozada/static/js/runtime~main.8b689fbf.js",
@@ -9,10 +9,10 @@
     "static/js/2.d074fda8.chunk.js": "/portfolioCatherineLozada/static/js/2.d074fda8.chunk.js",
     "static/js/2.d074fda8.chunk.js.map": "/portfolioCatherineLozada/static/js/2.d074fda8.chunk.js.map",
     "index.html": "/portfolioCatherineLozada/index.html",
-    "precache-manifest.bc59f33593aa3f279d6ec58c6bdca547.js": "/portfolioCatherineLozada/precache-manifest.bc59f33593aa3f279d6ec58c6bdca547.js",
+    "precache-manifest.bcd4ad55bf0634ba7b57bdba90a56fc8.js": "/portfolioCatherineLozada/precache-manifest.bcd4ad55bf0634ba7b57bdba90a56fc8.js",
     "service-worker.js": "/portfolioCatherineLozada/service-worker.js",
     "static/css/2.0571f848.chunk.css.map": "/portfolioCatherineLozada/static/css/2.0571f848.chunk.css.map",
-    "static/css/main.975aa1d5.chunk.css.map": "/portfolioCatherineLozada/static/css/main.975aa1d5.chunk.css.map",
+    "static/css/main.51a925be.chunk.css.map": "/portfolioCatherineLozada/static/css/main.51a925be.chunk.css.map",
     "static/js/2.d074fda8.chunk.js.LICENSE.txt": "/portfolioCatherineLozada/static/js/2.d074fda8.chunk.js.LICENSE.txt"
   }
 }
