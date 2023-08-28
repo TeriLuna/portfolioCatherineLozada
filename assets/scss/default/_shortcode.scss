@@ -152,6 +152,9 @@ font-family: 'Poppins', sans-serif;
     background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
   }
 }
+.bg-image--teri {
+  background-image: url(/public/assets/images/bg/bg-image-16.jpg) !important;
+}
 
 @for $i from 1 through 80 {
   .font--#{$i} {
