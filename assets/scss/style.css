@@ -2421,7 +2421,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .bg-image--teri {
-  background-image: url(./assets/images/bg/bg-image-16.jpg) !important;
+  background-image: url("./assets/images/bg/bg-image-16.jpg") !important;
 }
 
 .font--1 {

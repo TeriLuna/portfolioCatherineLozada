@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cabe498b0c0a9461577c37b8e6e972d4",
+    "revision": "2539cd0ea243061105901f49d3212523",
     "url": "/portfolioCatherineLozada/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolioCatherineLozada/static/css/2.0571f848.chunk.css"
   },
   {
-    "revision": "b35d190856db0596e325",
-    "url": "/portfolioCatherineLozada/static/css/main.83ed5a31.chunk.css"
+    "revision": "8a5b0cb2ebe82ee28e73",
+    "url": "/portfolioCatherineLozada/static/css/main.975aa1d5.chunk.css"
   },
   {
     "revision": "2b9c2a341abd66ad65fa",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolioCatherineLozada/static/js/2.d074fda8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b35d190856db0596e325",
+    "revision": "8a5b0cb2ebe82ee28e73",
     "url": "/portfolioCatherineLozada/static/js/main.e63db78a.chunk.js"
   },
   {
