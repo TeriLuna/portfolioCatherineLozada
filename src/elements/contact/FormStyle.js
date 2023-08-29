@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { AttentionSeeker } from "react-awesome-reveal";
 
 const Result = () => {
   return (
@@ -103,15 +104,17 @@ function FormStyle({ props }) {
         </div>
 
         <div className="rn-form-group">
-          <button
-            className="btn-default"
-            type="submit"
-            value="submit"
-            name="submit"
-            id="mc-embedded-subscribe"
-          >
-            Send
-          </button>
+          <AttentionSeeker shake>
+            <button
+              className="btn-default"
+              type="submit"
+              value="submit"
+              name="submit"
+              id="mc-embedded-subscribe"
+            >
+              Send
+            </button>
+          </AttentionSeeker>
         </div>
 
         <div className="rn-form-group">{result ? <Result /> : null}</div>

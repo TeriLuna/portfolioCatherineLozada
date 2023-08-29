@@ -6,6 +6,7 @@
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
+    "@emotion/react": "^11.11.1",
     "@svgr/webpack": "4.1.0",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
@@ -51,6 +52,7 @@
     "react-accessible-accordion": "^3.3.5",
     "react-animate-on-scroll": "^2.1.5",
     "react-app-polyfill": "^1.0.5",
+    "react-awesome-reveal": "^4.2.5",
     "react-bootstrap": "^1.6.4",
     "react-countup": "^4.4.0",
     "react-dev-utils": "^9.1.0",

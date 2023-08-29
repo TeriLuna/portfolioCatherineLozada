@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Zoom } from "react-awesome-reveal";
 
 const Portfolio_image = (
   <img
@@ -54,54 +55,56 @@ class PortfolioList extends Component {
       <React.Fragment>
         {list.map((value, index) => (
           <div className={`${column}`} key={index}>
-            <div className={`im_portfolio ${styevariation}`}>
-              <div className="thumbnail_inner">
-                <div className="thumbnail">
-                  <a
-                    href={value.link}
-                    target={"_blank"}
-                    rel={"noopener noreferrer"}
-                  >
-                    {value.image}
-                  </a>
+            <Zoom triggerOnce>
+              <div className={`im_portfolio ${styevariation}`}>
+                <div className="thumbnail_inner">
+                  <div className="thumbnail">
+                    <a
+                      href={value.link}
+                      target={"_blank"}
+                      rel={"noopener noreferrer"}
+                    >
+                      {value.image}
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="content">
-                <div className="inner">
-                  <div className="portfolio_heading">
-                    <div className="category_list">
-                      <a
-                        href={value.link}
-                        target={"_blank"}
-                        rel={"noopener noreferrer"}
-                      >
-                        {value.category}
-                      </a>
+                <div className="content">
+                  <div className="inner">
+                    <div className="portfolio_heading">
+                      <div className="category_list">
+                        <a
+                          href={value.link}
+                          target={"_blank"}
+                          rel={"noopener noreferrer"}
+                        >
+                          {value.category}
+                        </a>
+                      </div>
+                      <h4 className="title">
+                        <a
+                          href={value.link}
+                          target={"_blank"}
+                          rel={"noopener noreferrer"}
+                        >
+                          {value.title}
+                        </a>
+                      </h4>
                     </div>
-                    <h4 className="title">
-                      <a
-                        href={value.link}
-                        target={"_blank"}
-                        rel={"noopener noreferrer"}
-                      >
-                        {value.title}
-                      </a>
-                    </h4>
-                  </div>
-                  <div className="portfolio_hover">
-                    <p style={{ fontSize: "0.85em" }}>{value.description}</p>
+                    <div className="portfolio_hover">
+                      <p style={{ fontSize: "0.85em" }}>{value.description}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <a
-                className="transparent_link"
-                href={value.link}
-                target={"_blank"}
-                rel={"noopener noreferrer"}
-                dangerouslySetInnerHTML={{ __html: value.title }}
-              ></a>
-            </div>
+                <a
+                  className="transparent_link"
+                  href={value.link}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                  dangerouslySetInnerHTML={{ __html: value.title }}
+                ></a>
+              </div>
+            </Zoom>
           </div>
         ))}
       </React.Fragment>
