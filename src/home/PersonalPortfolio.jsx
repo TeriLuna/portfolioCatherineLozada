@@ -7,6 +7,7 @@ import FooterTwo from "../component/footer/FooterTwo";
 import BrandTwo from "../elements/BrandTwo";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import ContactOne from "../elements/contact/ContactOne";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 const SlideList = [
   {
@@ -54,7 +55,8 @@ class PersonalPortfolio extends Component {
       "Experience in React and Next.js",
       "Strong ability to work independently and self-guided",
       "Proficiency in HTML, CSS and JavaScript",
-      "Excellent communication skills and a willingness to collaborate with team members",
+      "Excellent communication skills",
+      "Willingness to collaborate with team members",
     ];
     let title = "My About",
       description =
@@ -79,52 +81,60 @@ class PersonalPortfolio extends Component {
                   <div className="col-lg-12">
                     <div className={`inner ${value.textPosition}`}>
                       {value.category ? (
-                        <div
-                          className=" d-inline-block"
-                          style={{
-                            background: "#080808de",
-                            borderRadius: "5px",
-                            paddingRight: "7px",
-                            paddingLeft: "7px",
-                          }}
-                        >
-                          <span className="theme-gradient font-900">
-                            {value.category}
-                          </span>
-                        </div>
+                        <Slide triggerOnce>
+                          <div
+                            className=" d-inline-block"
+                            style={{
+                              background: "#080808de",
+                              borderRadius: "5px",
+                              paddingRight: "7px",
+                              paddingLeft: "7px",
+                            }}
+                          >
+                            <span className="theme-gradient font-900">
+                              {value.category}
+                            </span>
+                          </div>
+                        </Slide>
                       ) : (
                         ""
                       )}
                       {value.title ? (
-                        <h1
-                          className="title text-light"
-                          dangerouslySetInnerHTML={{ __html: value.title }}
-                        ></h1>
+                        <Slide direction="right" triggerOnce>
+                          <h1
+                            className="title text-light"
+                            dangerouslySetInnerHTML={{ __html: value.title }}
+                          ></h1>
+                        </Slide>
                       ) : (
                         ""
                       )}
                       {value.description ? (
-                        <p
-                          className="description text-light"
-                          dangerouslySetInnerHTML={{
-                            __html: value.description,
-                          }}
-                        ></p>
+                        <Slide triggerOnce>
+                          <p
+                            className="description text-light"
+                            dangerouslySetInnerHTML={{
+                              __html: value.description,
+                            }}
+                          ></p>
+                        </Slide>
                       ) : (
                         ""
                       )}
                       {value.buttonText ? (
-                        <div className="slide-btn">
-                          <a
-                            className="btn-default"
-                            href={`${value.buttonLink}`}
-                            download="CatherineLozadaCV"
-                            target={"_blank"}
-                            rel={"noopener noreferrer"}
-                          >
-                            {value.buttonText}
-                          </a>
-                        </div>
+                        <Slide direction="right" triggerOnce>
+                          <div className="slide-btn">
+                            <a
+                              className="btn-default"
+                              href={`${value.buttonLink}`}
+                              download="CatherineLozadaCV"
+                              target={"_blank"}
+                              rel={"noopener noreferrer"}
+                            >
+                              {value.buttonText}
+                            </a>
+                          </div>
+                        </Slide>
                       ) : (
                         ""
                       )}
@@ -145,35 +155,45 @@ class PersonalPortfolio extends Component {
               <div className="row row--35 align-items-center">
                 <div className="col-lg-5">
                   <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src="./assets/images/about/about-5.jpg"
-                      alt="About Images"
-                    />
+                    <Zoom triggerOnce>
+                      <img
+                        className="w-100"
+                        src="./assets/images/about/about-5.jpg"
+                        alt="About Images"
+                      />
+                    </Zoom>
                   </div>
                 </div>
                 <div className="col-lg-7" id="about">
                   <div className="about-inner inner">
                     <div className="section-title">
-                      <span className="subtitle">Read About Me</span>
-                      <h2 className="title">{title}</h2>
-                      <p className="description">{description}</p>
+                      <Slide cascade damping={1e-1} triggerOnce>
+                        <span className="subtitle">Read About Me</span>
+                        <h2 className="title">{title}</h2>
+                      </Slide>
+                      <Slide damping={1e-1} triggerOnce>
+                        <p className="description">{description}</p>
+                      </Slide>
                     </div>
                     <div className="row">
                       <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div className="about-us-list">
-                          <h5 className="title">Certifications</h5>
+                          <Slide triggerOnce>
+                            <h5 className="title">Certifications</h5>
+                          </Slide>
                           {Certifications.map((certification, index) => (
-                            <div className=" mb--30" key={index}>
-                              <p className="mb--10">{certification.title}</p>
-                              <a
-                                className="link im-hover"
-                                href={certification.link}
-                                target={"_blank"}
-                                rel={"noopener noreferrer"}
-                              >
-                                Credential URL
-                              </a>
+                            <div className="mb--30" key={index}>
+                              <Slide cascade triggerOnce>
+                                <p className="mb--10">{certification.title}</p>
+                                <a
+                                  className="link im-hover"
+                                  href={certification.link}
+                                  target={"_blank"}
+                                  rel={"noopener noreferrer"}
+                                >
+                                  Credential URL
+                                </a>
+                              </Slide>
                             </div>
                           ))}
                         </div>
@@ -181,31 +201,35 @@ class PersonalPortfolio extends Component {
 
                       <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div className="about-us-list">
-                          <h5 className="title">Development Skill</h5>
-                          <div className=" d-flex">
-                            <div className="col-lg-6 col-md-6 col-sm-6 col-6">
-                              <p>React JS</p>
-                              <p>Next JS</p>
-                              <p>Gatsby</p>
-                              <p>HTML5</p>
-                              <p>CSS3</p>
-                              <p>JavaScript</p>
-                              <p>JSON</p>
-                              <p>AJAX</p>
-                              <p>Bootstrap</p>
-                            </div>
-                            <div className="col-lg-6 col-md-6 col-sm-6 col-6">
-                              <p>Material UI</p>
-                              <p>Tailwind</p>
-                              <p>SASS</p>
-                              <p>Git</p>
-                              <p>GitHub</p>
-                              <p>Heroku</p>
-                              <p>Scrum</p>
-                              <p>Trello</p>
-                              <p>Email JS</p>
-                              <p>Firebase</p>
-                            </div>
+                          <Slide direction="right" triggerOnce>
+                            <h5 className="title">Development Skill</h5>
+                          </Slide>
+                          <div className=" d-flex col-12">
+                            <Slide cascade direction="right" triggerOnce>
+                              <div className="col-12">
+                                <p>React JS</p>
+                                <p>Next JS</p>
+                                <p>Gatsby</p>
+                                <p>HTML5</p>
+                                <p>CSS3</p>
+                                <p>JavaScript</p>
+                                <p>JSON</p>
+                                <p>AJAX</p>
+                                <p>Bootstrap</p>
+                              </div>
+                              <div style={{ width: "115%" }}>
+                                <p>Material UI</p>
+                                <p>Tailwind</p>
+                                <p>SASS</p>
+                                <p>Git</p>
+                                <p>GitHub</p>
+                                <p>Heroku</p>
+                                <p>Scrum</p>
+                                <p>Trello</p>
+                                <p>Email JS</p>
+                                <p>Firebase</p>
+                              </div>
+                            </Slide>
                           </div>
                         </div>
                       </div>
@@ -224,8 +248,10 @@ class PersonalPortfolio extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="section-title text-center mb--25 mb_sm--0">
-                  <span className="subtitle">My Top clients</span>
-                  <h2 className="title">Client's Brand</h2>
+                  <Slide cascade damping={0.1} triggerOnce>
+                    <span className="subtitle">My Top clients</span>
+                    <h2 className="title">Client's Brand</h2>
+                  </Slide>
                 </div>
               </div>
             </div>
@@ -244,45 +270,54 @@ class PersonalPortfolio extends Component {
             <div className="row row--35 align-items-center">
               <div className="col-lg-6">
                 <div className="thumbnail">
-                  <img
-                    className="w-100"
-                    src="./assets/images/about/about-4.png"
-                    alt="About Images"
-                  />
+                  <Zoom triggerOnce>
+                    <img
+                      className="w-100"
+                      src="./assets/images/about/about-4.png"
+                      alt="About Images"
+                    />
+                  </Zoom>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="about-inner inner">
                   <div className="section-title">
-                    <span className="subtitle">My Performance</span>
-                    <h2 className="title">My Best Performance</h2>
-                    <p>
-                      The passion for technology and the desire to be on a
-                      continuous learning path have driven me into the world of
-                      IT.
-                    </p>
+                    <Slide cascade damping={0.1} triggerOnce>
+                      <span className="subtitle">My Performance</span>
+                      <h2 className="title">My Best Performance</h2>
+                      <p>
+                        The passion for technology and the desire to be on a
+                        continuous learning path have driven me into the world
+                        of IT.
+                      </p>
+                    </Slide>
                   </div>
                   <div className="accordion-wrapper mt--30">
                     <ul className="list-style--1">
                       {namesItemOne.map((name, index) => {
                         return (
                           <li key={index}>
-                            <FiCheck /> {name}
+                            <FiCheck />
+                            <Fade delay cascade damping={0.1} triggerOnce>
+                              {name}
+                            </Fade>
                           </li>
                         );
                       })}
                     </ul>
                   </div>
                   <div className="about-button mt--30">
-                    <a
-                      className="btn-default"
-                      href="./assets/pdf/Catherine-Lozada-CV.pdf"
-                      download="CatherineLozadaCV"
-                      target={"_blank"}
-                      rel={"noopener noreferrer"}
-                    >
-                      See My CV
-                    </a>
+                    <Slide triggerOnce>
+                      <a
+                        className="btn-default"
+                        href="./assets/pdf/Catherine-Lozada-CV.pdf"
+                        download="CatherineLozadaCV"
+                        target={"_blank"}
+                        rel={"noopener noreferrer"}
+                      >
+                        See My CV
+                      </a>
+                    </Slide>
                   </div>
                 </div>
               </div>
@@ -298,14 +333,18 @@ class PersonalPortfolio extends Component {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="section-title text-center mb--30 mb_sm--0">
-                    <span className="subtitle">Some projects</span>
-                    <h2 className="title">Some of My Recent Collaborations</h2>
-                    <p className="description">
-                      One of the most important things for me is to connect with
-                      the essence of the clients,
-                      <br /> their projects, their goals, and translate it into
-                      a website.
-                    </p>
+                    <Slide cascade triggerOnce>
+                      <span className="subtitle">Some projects</span>
+                      <h2 className="title">
+                        Some of My Recent Collaborations
+                      </h2>
+                      <p className="description">
+                        One of the most important things for me is to connect
+                        with the essence of the clients,
+                        <br /> their projects, their goals, and translate it
+                        into a website.
+                      </p>
+                    </Slide>
                   </div>
                 </div>
               </div>
