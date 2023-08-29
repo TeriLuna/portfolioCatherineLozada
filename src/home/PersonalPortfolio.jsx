@@ -7,7 +7,7 @@ import FooterTwo from "../component/footer/FooterTwo";
 import BrandTwo from "../elements/BrandTwo";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import ContactOne from "../elements/contact/ContactOne";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Slide, Zoom } from "react-awesome-reveal";
 
 const SlideList = [
   {
@@ -294,16 +294,16 @@ class PersonalPortfolio extends Component {
                   </div>
                   <div className="accordion-wrapper mt--30">
                     <ul className="list-style--1">
-                      {namesItemOne.map((name, index) => {
-                        return (
-                          <li key={index}>
-                            <FiCheck />
-                            <Fade delay cascade damping={0.1} triggerOnce>
+                      <Slide cascade damping={0.1} triggerOnce>
+                        {namesItemOne.map((name, index) => {
+                          return (
+                            <li key={index}>
+                              <FiCheck />
                               {name}
-                            </Fade>
-                          </li>
-                        );
-                      })}
+                            </li>
+                          );
+                        })}
+                      </Slide>
                     </ul>
                   </div>
                   <div className="about-button mt--30">
